@@ -1,0 +1,18 @@
+1. Button or CLI
+1a. Prolly a button
+2. List of words and expected outcomes
+3. Run thru words, compare outcomes
+4. Log successes and failures
+Possible output:
+Test success looks like this 
+
+America - Success! (Green)
+
+Test fail looks like this:
+Liberia - FAIL (in red)
+Expected Output -> lapewija
+Actual Output   -> liperia
+
+Start with time date and Begin Test
+Finish with test completed
+Maybe do some math on the begin time and give the length of the operation... just for fun

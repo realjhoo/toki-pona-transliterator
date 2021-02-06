@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Mega&family=Roboto:wght@300&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  background-color: #333;
+}
+
+button {
+  position: relative;
+  background-color: #333;
+  top: 5vh;
+  left: 5%;
+  width: 10rem;
+  height: 5rem;
+  display: inline-block;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  font-weight: 300;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  font-family: "Lexend Mega", sans-serif;
+}
+
+button:hover {
+  color: #333;
+  background-color: #ffffff;
+}
