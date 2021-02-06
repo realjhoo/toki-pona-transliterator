@@ -103,3 +103,6 @@ dist
 # TernJS port file
 .tern-port
 *.cs
+p-code-notes
+test notes
+workspace.code-workspace
