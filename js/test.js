@@ -29,6 +29,7 @@ Actual output   -> ${tpWord}`;
 function testWords() {
   unitTest("Hoover", "Uwe");
   unitTest("Liberia", "Lapewija");
+  unitTest("Ethiopia", "Isijopija");
 }
 
 // --------------------------------------------------------
