@@ -8,7 +8,7 @@ function unitTest(testWord, expectedOutput) {
   // TODO
   // Add time in and time out to calc how long the operation took
 
-  // send the word to be transliterated
+  // send the testWord to be transliterated
   tpWord = transliterate(testWord);
 
   // log out success or failure of transliteration
@@ -19,8 +19,8 @@ function unitTest(testWord, expectedOutput) {
   } else {
     testResult = "FAIL!";
     outputMsg = `${testWord} - ${testResult} 
-Expected output -> ${expectedOutput}
-Actual output   -> ${tpWord}`;
+ Expected output -> ${expectedOutput}
+ Actual output   -> ${tpWord}`;
     console.warn(outputMsg);
   }
 }
@@ -28,6 +28,8 @@ Actual output   -> ${tpWord}`;
 // --------------------------------------------------------
 function testWords() {
   unitTest("Hoover", "Uwe");
+  unitTest("America", "Mewika");
+  unitTest("Papua New Guinea", "Papuwanijukini");
   unitTest("Liberia", "Lapewija");
   unitTest("Ethiopia", "Isijopija");
 }

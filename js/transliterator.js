@@ -1,9 +1,6 @@
-function testo() {
-  return "";
-}
-
+// --------------------------------------------------------
 function transliterate(engString) {
   tpString = engString;
+  // do various manipulations of tpString
   return tpString;
-  // transliterate to toki pona
 }
