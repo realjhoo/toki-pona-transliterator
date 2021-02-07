@@ -15,7 +15,7 @@ function unitTest(testWord, expectedOutput) {
   if (tpWord === expectedOutput) {
     testResult = "SUCCESS!";
     outputMsg = `${testWord} - ${testResult}`;
-    console.log(outputMsg);
+    console.log("%c" + outputMsg, "color: #66ff00");
   } else {
     testResult = "FAIL!";
     outputMsg = `${testWord} - ${testResult} 
@@ -27,11 +27,32 @@ function unitTest(testWord, expectedOutput) {
 
 // --------------------------------------------------------
 function testWords() {
+  console.clear();
+  unitTest("Jerry", "Sewi");
+  unitTest("Leigh", "Li");
   unitTest("Hoover", "Uwe");
+  unitTest("Africa", "Apika");
   unitTest("America", "Mewika");
-  unitTest("Papua New Guinea", "Papuwanijukini");
-  unitTest("Liberia", "Lapewija");
+  unitTest("Antartica", "Antasika");
+  unitTest("Asia", "Asija");
+  unitTest("Australia", "Oselija");
   unitTest("Ethiopia", "Isijopija");
+  unitTest("Europe", "Elopa");
+  unitTest("France", "Kanse");
+  unitTest("Germany", "Tosi");
+  unitTest("Greenland", "Kenlan");
+  unitTest("Houston", "Eton");
+  unitTest("India", "Insi");
+  unitTest("Liberia", "Lapewija");
+  unitTest("Namibia", "Namipija");
+  unitTest("New Zealand", "Nusilan");
+  unitTest("North America", "Nowamewika");
+  unitTest("Papua New Guinea", "Papuwanijukini");
+  unitTest("Queensland", "Kinlan");
+  unitTest("South America", "Setamewika");
+  unitTest("Sugar Land", "Sukalane");
+  unitTest("Texarkana", "Tekawana");
+  unitTest("Texas", "Teka");
 }
 
 // --------------------------------------------------------
