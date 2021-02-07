@@ -28,6 +28,9 @@ function unitTest(testWord, expectedOutput) {
 // --------------------------------------------------------
 function testWords() {
   console.clear();
+  // log out the date/time
+  console.log(theDate());
+
   unitTest("Jerry", "Sewi");
   unitTest("Leigh", "Li");
   unitTest("Hoover", "Uwe");
@@ -40,7 +43,7 @@ function testWords() {
   unitTest("Europe", "Elopa");
   unitTest("France", "Kanse");
   unitTest("Germany", "Tosi");
-  unitTest("Greenland", "Kenlan");
+  unitTest("Greenland", "Kinlan");
   unitTest("Houston", "Eton");
   unitTest("India", "Insi");
   unitTest("Liberia", "Lapewija");
@@ -62,6 +65,21 @@ function buttonlistener() {
   });
 }
 
+// --------------------------------------------------------
+function theDate() {
+  let now = new Date();
+  let time =
+    now.getFullYear() +
+    "." +
+    now.getMonth() +
+    "." +
+    now.getDate() +
+    " " +
+    now.getHours() +
+    ":" +
+    now.getMinutes();
+  return time;
+}
 // --------------------------------------------------------
 function main() {
   buttonlistener();

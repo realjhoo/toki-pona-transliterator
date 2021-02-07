@@ -18,6 +18,8 @@ function transliterate(engString) {
 
   // Special fixes for specific words
   tpString = tpString.replaceAll("eur", "el"); // Europe
+  // detect two consonants in a row, delete one of them
+  // if one of them is w, l or j delete it, else delete the 2nd cononant
 
   // double consonants (bb, cc, dd, ff, gg, ll, mm, nn, pp, rr, ss, tt)
   tpString = tpString.replaceAll("bb", "b");
@@ -59,14 +61,15 @@ function transliterate(engString) {
   tpString = tpString.replaceAll("x", "k");
   tpString = tpString.replaceAll("z", "s");
 
-  // FIRST LETTER
-  if (tpString.charAt(0) === "j") {
+  // FIRST LETTER changes
+  let firstLetter = tpString.charAt(0);
+  if (firstLetter === "j") {
     tpString = tpString.replace("j", "s");
   }
 
-  // LAST LETTER
-  // if the last letter is y, make it an i
-  if (tpString.charAt(tpString.length - 1) === "y") {
+  // LAST LETTER changes
+  let lastLetter = tpString.charAt(tpString.length - 1);
+  if (lastLetter === "y") {
     tpString = tpString.slice(0, -1) + "i";
   }
 
@@ -82,7 +85,7 @@ function transliterate(engString) {
   tpString = tpString.replaceAll("wu", "u");
 
   // remove final consonant if not N
-  let lastLetter = tpString.charAt(tpString.length - 1);
+  lastLetter = tpString.charAt(tpString.length - 1);
   if (isConsonant(lastLetter) && lastLetter != "n") {
     tpString = tpString.slice(0, -1);
   }
