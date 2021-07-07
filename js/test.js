@@ -38,14 +38,15 @@ function testWords() {
   unitTest("America", "Mewika");
   unitTest("Antartica", "Antasika");
   unitTest("Asia", "Asija");
-  unitTest("Australia", "Oselija");
+  unitTest("Australia", "Osalija");
+  unitTest("Czechoslovakia", "Kesolowakija");
   unitTest("Ethiopia", "Isijopija");
   unitTest("Europe", "Elopa");
   unitTest("France", "Kanse");
   unitTest("Germany", "Tosi");
   unitTest("Greenland", "Kinlan");
   unitTest("Houston", "Eton");
-  unitTest("India", "Insi");
+  unitTest("India", "Insija");
   unitTest("Liberia", "Lapewija");
   unitTest("Namibia", "Namipija");
   unitTest("New Zealand", "Nusilan");
@@ -56,6 +57,7 @@ function testWords() {
   unitTest("Sugar Land", "Sukalane");
   unitTest("Texarkana", "Tekawana");
   unitTest("Texas", "Teka");
+  unitTest("Trekker", "???");
 }
 
 // --------------------------------------------------------
